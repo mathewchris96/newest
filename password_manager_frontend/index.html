@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Password Manager</h1>
+    </header>
+    <main>
+        <section id="auth-section">
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+            <div class="google-sign-in">
+                <button id="googleSignIn">Sign in with Google</button>
+            </div>
+        </section>
+        <section id="passwords-section" style="display:none;">
+            <h2>Saved Passwords</h2>
+            <div id="passwords-list"></div>
+            <button id="addPassword">Add New</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Password Manager. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
